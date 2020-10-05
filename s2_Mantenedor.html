@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formulario de Proveedores</title>
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+	</head>
+	<body>
+		<div class="form">
+			<form action="guarda_proveedor.php" method="POST">
+				<p>Registre Nuevo Proveedor</p>
+				<label for="Nombre">Ingrese nombre</label>
+				<br>
+				<input type="text" REQUIRED name="Nombre" placeholder="nombre..." value="" />
+				<br>
+
+				<label for="RUT">Ingrese RUT</label>
+				<br>
+				<input type="text" REQUIRED name="RUT"  placeholder="12345678-9" value=""
+				pattern="\d{3,8}-[\d|kK]{1}" title="Debe ser un Rut valido"/>
+				<br>
+
+				<label for="Direccion">Ingrese Direccion</label>
+				<br>
+				<input type="text" REQUIRED name="Direccion" placeholder="direccion..." value="" />
+				<br>
+
+				<label for="Telefono">Ingrese Telefono</label>
+				<br>
+				<input type="text" REQUIRED name="Telefono" placeholder="telefono..." value="" />
+				<br>
+
+				<label for="Contacto">Ingrese Contacto</label>
+				<br>
+				<input type="text" REQUIRED name="Contacto" placeholder="persona de contacto..." value="" />
+				<br>
+				<br>
+				<br>
+				<input type="submit" value="Guardar Proveedor">
+		</div>
+	</body>
+</html>
