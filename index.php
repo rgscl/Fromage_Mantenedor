@@ -66,4 +66,4 @@
   </div>
 </main>
 
-<?php include('includes/footer2.php'); ?>
+<?php include('includes/footer.php'); ?>
